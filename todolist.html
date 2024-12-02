@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="todolist.css">
+    <style>
+        .btn{
+            background-color: #62935c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: "Open Sans", sans-serif;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body> 
+    
+    <div class="container">
+        <a href="index1.php"><button class="btn" type="button">HOME</button></a>
+        <div class="todolist">
+            <h2>To do list</h2>
+            <div class="row">
+                <input type="text" id="add" placeholder="Add">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
